@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.DP;
 
 /*
 For max. profit->Current element - min element > max_diff

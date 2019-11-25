@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.DP;
 
 public class MinCostClimbingStairs
 {
