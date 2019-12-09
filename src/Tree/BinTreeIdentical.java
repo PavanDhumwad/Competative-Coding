@@ -1,4 +1,7 @@
 package Tree;
+
+import util.Tree.TreeNode;
+
 /*
     1. Check data of the root nodes (tree1->data ==  tree2->data)
     2. Check left subtrees recursively
@@ -7,39 +10,28 @@ package Tree;
           tree1->right_subtree, tree2->right_subtree)
     If a1,2,&3 are true then it is Identical else not.
  */
-class Node
-{
-    int data;
-    Node left, right;
-    Node(int data)
-    {
-        this.data = data;
-        left = right = null;
-    }
-}
-
 public class BinTreeIdentical
 {
     public static void main(String[] args)
     {
-        Node root1;
-        root1 = new Node(1);
-        root1.left = new Node(2);
-        root1.right = new Node(3);
-        root1.left.left = new Node(4);
-        root1.left.right = new Node(5);
+        TreeNode root1;
+        root1 = new TreeNode(1);
+        root1.left = new TreeNode(2);
+        root1.right = new TreeNode(3);
+        root1.left.left = new TreeNode(4);
+        root1.left.right = new TreeNode(5);
 
-        Node root2;
-        root2 = new Node(1);
-        root2.left = new Node(2);
-        root2.right = new Node(3);
-        root2.left.left = new Node(4);
-        root2.left.right = new Node(5);
+        TreeNode root2;
+        root2 = new TreeNode(1);
+        root2.left = new TreeNode(2);
+        root2.right = new TreeNode(3);
+        root2.left.left = new TreeNode(4);
+        root2.left.right = new TreeNode(5);
 
         System.out.println("IsBinaryTreeIdentical? : "+isBinaryTreeIdentical(root1,root2));
     }
 
-    private static boolean isBinaryTreeIdentical(Node tree1, Node tree2)
+    private static boolean isBinaryTreeIdentical(TreeNode tree1, TreeNode tree2)
     {
         if(tree1==null && tree2 == null)
             return true;
