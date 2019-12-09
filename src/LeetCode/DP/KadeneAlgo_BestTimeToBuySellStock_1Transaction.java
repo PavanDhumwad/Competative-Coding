@@ -8,7 +8,7 @@ We just generate in memory difference between consecutive elements.
 Then max. proift -> Largest Sum of Contiguous Subarray
 
  */
-public class BestTimeToBuySellStock_1Transaction
+public class KadeneAlgo_BestTimeToBuySellStock_1Transaction
 {
     public static void main(String[] args) {
         int a[] = {7,1,5,3,6,4};
