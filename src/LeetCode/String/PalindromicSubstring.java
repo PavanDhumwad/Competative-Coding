@@ -6,6 +6,7 @@ public class PalindromicSubstring
     public static void main(String[] args) {
         String str = "aaa";
         System.out.println("No. of Substring which are palindrome "+countAllPallindrome(str));
+
     }
 
     public static int countAllPallindrome(String str)
