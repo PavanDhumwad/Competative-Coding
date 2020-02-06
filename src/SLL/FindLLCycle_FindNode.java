@@ -29,6 +29,7 @@ public class FindLLCycle_FindNode
         }
         if(fast != slow)
             System.out.println("Cycle does not exists");
+
         slow = head;
         while (slow != fast)
         {
